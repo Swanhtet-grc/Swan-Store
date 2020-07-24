@@ -1,5 +1,5 @@
 pipeline {
-agent any
+  agent any
   stages {
     stage('Build') {
       steps {
@@ -16,6 +16,7 @@ agent any
     stage('Deploy') {
       steps {
         echo 'Deploying....'
+        sh 'npm start'
       }
     }
 
