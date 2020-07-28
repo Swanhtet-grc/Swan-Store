@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'ls'
+        sh '''echo myanmar2020 | sudo npm install
+npm start'''
       }
     }
 
