@@ -1,15 +1,9 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'Dockerfile'
-    }
-
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
-        sh '''sudo apt install npm
-npm start'''
+        sh 'npm start'
       }
     }
 
