@@ -42,3 +42,8 @@ body {
   font-size: 1.2rem;
   color: var(--mainYellow);
 }
+
+.img-fluid{
+  width: 48%;
+  height: 55%;
+}
